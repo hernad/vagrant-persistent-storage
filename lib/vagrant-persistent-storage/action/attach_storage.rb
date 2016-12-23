@@ -20,7 +20,7 @@ module VagrantPlugins
           return @app.call(env) if @machine.state.id == :saved
 
           return @app.call(env) unless env[:machine].config.persistent_storage.enabled?
-          @logger.info '** Attaching Persistent Storage (hernad patched) **'
+          @logger.info '** Attaching Persistent Storage (patched) **'
 
           env[:ui].info I18n.t("vagrant_persistent_storage.action.attach_storage")
           location = env[:machine].config.persistent_storage.location

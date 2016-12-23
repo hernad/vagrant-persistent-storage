@@ -32,9 +32,8 @@ module VagrantPlugins
 
           env[:ui].info I18n.t('vagrant_persistent_storage.action.manage_storage')
           machine = env[:machine]
-          manage_volumes(machine)
-
-          @app.call(env)
+          # hernad manage_volumes(machine)
+          # hernad @app.call(env)
 
         end
 
