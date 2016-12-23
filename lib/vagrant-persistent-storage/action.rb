@@ -11,7 +11,8 @@ module VagrantPlugins
       autoload :CreateStorage,             File.expand_path("../action/create_storage.rb", __FILE__)
       autoload :AttachStorage,             File.expand_path("../action/attach_storage.rb", __FILE__)
       autoload :DetachStorage,             File.expand_path("../action/detach_storage.rb", __FILE__)
-      autoload :ManageStorage,             File.expand_path("../action/manage_storage.rb", __FILE__)
+      #hernad patch - no manage_storage 
+      #autoload :ManageStorage,             File.expand_path("../action/manage_storage.rb", __FILE__)
 
       def self.create_adapter
         Vagrant::Action::Builder.new.tap do |builder|

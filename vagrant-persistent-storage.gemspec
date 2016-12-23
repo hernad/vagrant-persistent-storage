@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["sebastian@kusnier.net"]
   gem.description   = "A Vagrant plugin that creates a persistent storage and attaches it to guest machine."
   gem.summary       = gem.description
-  gem.homepage      = "https://github.com/kusnier/vagrant-persistent-storage"
+  gem.homepage      = "https://github.com/hernad/vagrant-persistent-storage"
   gem.license       = "MIT"
 
   gem.files         = `git ls-files`.split($/)
